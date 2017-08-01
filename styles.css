@@ -181,6 +181,33 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   color: #BF6836;
 }
 
+.cassava{
+  font-size: 9px;
+  text-align: left;
+  display: flex;
+  border: 2px dashed white;
+  border-radius: 1em;
+  width: 100%;
+  padding: .5em;
+}
+
+.cassava img {
+  float: left;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 48em){
+  .cassava{
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .cassava img {
+    float: left;
+    margin-left: 12em;
+  }
+}
+
 
 /* Navigation
 ------------------------------------------*/
@@ -253,27 +280,35 @@ nav li:last-child{
 
 
 .board-content{
-  min-width: 320px;
-  min-height: 390px;
-  background: url(images/board.png) no-repeat 0% 0px;
+  width: 100%;
+  /*min-width: 320px;*/
+  min-height: 603px;
+  background: url(images/board_long.png) no-repeat 50% 50%;
   color: #FFFAE2;
-  margin-left: .5em;
-  margin-right: .5em;
-
   margin-top: 3em;
 }
 @media screen and (min-width: 48em){
   .board-content{
     margin-top: 0em;
+    min-width: 320px;
   }
 }
 
 .content1 {
-  padding-top: 8em;
+  padding-top: 10em;
 }
 
 .location img{
   vertical-align: middle;
+}
+
+@media screen and (min-width: 48em){
+  .content1 {
+    padding-top: 7.5em;
+  }
+  .map{
+    margin-left: 1.5em;
+  }
 }
 
 
@@ -283,9 +318,9 @@ nav li:last-child{
 
 #map-canvas{
   width:270px;
-  height:95px;
+  height:270px;
   background:#D9D2B0;
-  margin-left: 2em;
+  margin: 0 auto;
   margin-top: -.7em;
   border-top: 2.5px solid #B3AD8F;
   border-left: 2.5px solid #B3AD8F;
@@ -307,7 +342,7 @@ nav li:last-child{
   width: 280px;
   min-height: 280px;
   background: #D9D2B0;
-  margin-left: 2em;
+  margin: 0 auto;
   filter: drop-shadow(0 2px 5px #8C7561);
 }
 
@@ -373,12 +408,6 @@ nav li:last-child{
 @media screen and (min-width: 48em){
   .board-content{
     margin-left: -1.5em;
-  }
-  .content1 {
-    padding-top: 6.5em;
-  }
-  .map{
-    margin-left: 1.5em;
   }
   .content2{
     margin-left: 0;
