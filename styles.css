@@ -469,6 +469,7 @@ nav li:last-child{
   margin-top: 0em;
   padding-top: 0;
   color: #8C7561;
+  font-size: 19px;
 }
 @media screen and (min-width:48em){
   #menu1 h1,
@@ -482,7 +483,7 @@ nav li:last-child{
 .head-icon2 {
   align-items: center;
   vertical-align: middle;
-  margin: 0 -.2em;
+  margin: 0 -.3em;
 }
 
 .head-icon2{
