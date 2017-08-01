@@ -208,4 +208,11 @@ sweet.addEventListener('click', function(){
 })
 
 
-////////////////////// Home Button //////////////////////
+////////////////////// Bread Name Style //////////////////////
+
+if (document.documentElement.clientWidth < 480) {
+const breadName = document.querySelectorAll('.tooltip')
+for (var i=0; i<breadName.length; i++) {
+  breadName[i].style.cssText = "text-decoration: underline;"
+}
+}

@@ -214,7 +214,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 
 nav {
-  z-index:1001;
+  z-index:20;
   position:absolute;
 }
 
@@ -525,6 +525,7 @@ transform: rotateY(-180deg);
 }
 
 
+
 /* Menu1 & Menu3
 ------------------------------------------*/
 
@@ -580,10 +581,10 @@ transform: rotateY(-180deg);
 /* Main Menus Tooltips
 ------------------------------------------*/
 
-
 .tooltip{
   position: relative;
   align-items: center;
+  /*z-index:100;*/
 }
 
 .tooltip .tiptext {
@@ -599,13 +600,14 @@ transform: rotateY(-180deg);
   padding: 1em 0;
   border-radius: 7px;
   position: absolute;
-  z-index: 1;
+  z-index:100;
 }
 
 .tooltip:hover .tiptext,
 .tooltip:focus .tiptext{
   visibility: visible;
   padding: .7em;
+  /*z-index:100;*/
 }
 
 .tooltip .tiptext::after{
@@ -617,4 +619,5 @@ transform: rotateY(-180deg);
   border-width: 5px;
   border-style: solid;
   border-color: transparent transparent rgba(191, 217, 98, 0.8) transparent;
+  /*z-index:100;*/
 }
